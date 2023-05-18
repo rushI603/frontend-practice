@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="container">
+      <div class="description">DAY</div>
+      <div class="description">MONTH</div>
+      <div class="description">YEAR</div>
+      <input type="text"name="day" id="day" placeholder="DD" pattern="[0-9]" oninvalid="this.setCustomValidity('Enter numbers not charcters')">
+      <input type="text" name="month" id="months" placeholder="MM" pattern="[0-9]" oninvalid="this.setCustomValidity('Enter numbers not charcters')">
+      <input type="text" name="year" id="year" placeholder="YYYY" pattern="[0-9]" oninvalid="this.setCustomValidity('Enter numbers not charcters')">
+
+      <br>
+      <hr>
+      <button onclick="func()">submit</button>
+    </div>  
+      <h1>
+        <em><span>--</span> years</em><br>
+        <em><span>--</span> months</em><br>
+        <em><span>--</span> days</em><br>
+      </h1>
+  </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Frecoder</a>.
+    </div>
+  </div>
+<script src="index.js"></script>
+</body>
+</html>
